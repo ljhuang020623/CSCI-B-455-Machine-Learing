@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>485942</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="important-instruction" class="cell markdown" id="x5FRwUbEfYtp">
+<h2>Important instruction</h2>
+<p>For programming exercises only edit the code as shown in the following format.</p>
+<pre><code>##############################################
+
+#Edit the following code
+
+var1 = 3
+var2 = 4
+print(var1 + var4)
+
+##############################################</code></pre>
+<p>You are open to experimenting with the other parts of code but you will only be awarded points if the question asked is answered which only needs finishing or making changes to the code in the above specified format.</p>
+</section>
+<section id="question-4-best-hypothesis" class="cell markdown" id="CIl4Pn4hvf_4">
+<h2>Question 4: Best Hypothesis</h2>
+<p>For this exercise we will be using example from the Chapter 2: Supervised Learning of <strong>Introduction to Machine Learning, 4th Edition, The MIT Press, 2020</strong> by Ethem Alpaydın.</p>
+<p>The code plots Data points of family and non family cars, general hypothesis (G), specific hypothesis (S) and a hypothesis (H).</p>
+<p>The vertices of the General Hypothesis (G) rectangle are as follows:</p>
+<p><code>(x1, y1), (x1, y2), (x2, y2), (x2, y1) = (2, 3.1), (2, 10), (9, 10), (9, 3.1)</code></p>
+<p>The vertices of the Specific Hypothesis (S) rectangle are as follows:</p>
+<p><code>(x1, y1), (x1, y2), (x2, y2), (x2, y1) = (3.9, 5), (3.9, 8.1), (7.1, 8.1), (7.1, 5)</code></p>
+<p>Your task will be to find the vertices and change the <code>x1, x2, y1, y2</code> variables to plot the best hypothesis, defined as the hypothesis with largest margin (refer Figure 2.5 from the textbook for more information).</p>
+<p>NOTE: The points <code>(x1, y1), (x1, y2), (x2, y2), (x2, y1)</code> start from the bottom-left corner vertex of the hypothesis rectangle and follow a clock-wise order.</p>
+</section>
+<div class="cell code" data-execution_count="10" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:522}" id="J_bNOw91ew8y" data-outputId="875cbf0e-3a37-4591-a3d8-44228c260edf">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Importing packages</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Data points</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>family_cars <span class="op">=</span> np.array([(<span class="dv">5</span>, <span class="dv">6</span>), (<span class="dv">4</span>, <span class="dv">7</span>), (<span class="dv">6</span>, <span class="dv">6</span>), (<span class="fl">5.5</span>, <span class="dv">7</span>), (<span class="dv">7</span>, <span class="dv">7</span>), (<span class="dv">4</span>, <span class="dv">8</span>), (<span class="fl">5.23</span>, <span class="fl">7.8</span>)])</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>not_family_cars <span class="op">=</span> np.array([(<span class="fl">1.6</span>,<span class="dv">4</span>), (<span class="dv">2</span>, <span class="dv">2</span>), (<span class="dv">4</span>, <span class="dv">1</span>), (<span class="dv">5</span>, <span class="fl">2.5</span>), (<span class="dv">8</span>, <span class="fl">1.63</span>), (<span class="dv">10</span>, <span class="dv">7</span>), (<span class="dv">6</span>, <span class="fl">10.5</span>), (<span class="dv">7</span>, <span class="dv">3</span>), (<span class="fl">6.5</span>, <span class="dv">11</span>)])</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#######################################################################</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#Edit the following code</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>x1, x2, y1, y2 <span class="op">=</span> <span class="fl">2.95</span>, <span class="fl">8.05</span>, <span class="fl">4.05</span>, <span class="fl">9.05</span> <span class="co">#Change the values of the given points to represent the best hypothesis rectangle</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#######################################################################</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">#Vertices for best hypothesis</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>best_hypothesis_vertices <span class="op">=</span> np.array([(x1, y1), (x1, y2), (x2, y2), (x2, y1)])</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot instances of cars</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>plt.scatter(family_cars[:, <span class="dv">0</span>], family_cars[:, <span class="dv">1</span>], color<span class="op">=</span><span class="st">&#39;blue&#39;</span>, marker<span class="op">=</span><span class="st">&#39;o&#39;</span>, label<span class="op">=</span><span class="st">&#39;Family cars&#39;</span>)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>plt.scatter(not_family_cars[:, <span class="dv">0</span>], not_family_cars[:, <span class="dv">1</span>], color<span class="op">=</span><span class="st">&#39;red&#39;</span>, marker<span class="op">=</span><span class="st">&#39;x&#39;</span>, label<span class="op">=</span><span class="st">&#39;Not family cars&#39;</span>)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot general hypothesis</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>general_hypothesis <span class="op">=</span> plt.Polygon(np.array([(<span class="dv">2</span>, <span class="fl">3.1</span>), (<span class="dv">2</span>, <span class="dv">10</span>), (<span class="dv">9</span>, <span class="dv">10</span>), (<span class="dv">9</span>, <span class="fl">3.1</span>)]),</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>                          edgecolor<span class="op">=</span><span class="st">&#39;red&#39;</span>, linewidth<span class="op">=</span><span class="dv">2</span>, fill<span class="op">=</span><span class="va">False</span>, label<span class="op">=</span><span class="st">&#39;General Hypothesis (G)&#39;</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>plt.gca().add_patch(general_hypothesis)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot specific hypothesis</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>specific_hypothesis <span class="op">=</span> plt.Polygon(np.array([(<span class="fl">3.9</span>, <span class="dv">5</span>), (<span class="fl">3.9</span>, <span class="fl">8.1</span>), (<span class="fl">7.1</span>, <span class="fl">8.1</span>), (<span class="fl">7.1</span>, <span class="dv">5</span>)]),</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>                          edgecolor<span class="op">=</span><span class="st">&#39;blue&#39;</span>, linewidth<span class="op">=</span><span class="dv">2</span>, fill<span class="op">=</span><span class="va">False</span>, label<span class="op">=</span><span class="st">&#39;Specific Hypothesis (S)&#39;</span>)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>plt.gca().add_patch(specific_hypothesis)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot general hypothesis hypothesis</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>hypothesis <span class="op">=</span> plt.Polygon(best_hypothesis_vertices,</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>                          edgecolor<span class="op">=</span><span class="st">&#39;green&#39;</span>, linewidth<span class="op">=</span><span class="dv">2</span>, fill<span class="op">=</span><span class="va">False</span>, label<span class="op">=</span><span class="st">&#39;Hypothesis (H)&#39;</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>plt.gca().add_patch(hypothesis)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Set plot labels and title</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Price&#39;</span>)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Engine power&#39;</span>)</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">&#39;upper right&#39;</span>, bbox_to_anchor<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">0</span>))</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="d7b993390c85c64096cddd108e97d1c5dc4189e6.png" /></p>
+</div>
+</div>
+<section id="briefly-explain-your-deduction-and-reasoning-of-the-best-hypothesis-rectangle" class="cell markdown" id="7hxY8XZfytlS">
+<h3><strong>Briefly explain your deduction and reasoning of the best hypothesis rectangle.</strong></h3>
+<p>The best hypothesis in machine learning strikes a balance between being broad and specific. It's wider than the very precise Specific Hypothesis to avoid overfitting and generalize well to new data, yet it's narrower than the broad General Hypothesis to maintain accuracy. This balanced approach helps the model accurately classify data while being adaptable to new, diverse situations. What I did was I find the midpoint of G and S for each four sides and make sure that the new hypothesis is in the middle of them.</p>
+</section>
+<section id="question-5-best-fit-line" class="cell markdown" id="C7sb65NlzQJ_">
+<h2>Question 5: Best fit line</h2>
+<p>For this exercise we will be using example from the Chapter 2: Supervised Learning of <strong>Introduction to Machine Learning, 4th Edition, The MIT Press, 2020</strong> by Ethem Alpaydın.</p>
+<p>It is important to understand the concepts of overfitting and underfitting. Using linear and polynomial regression we will fit the respective hypothesis lines to the <a href="https://www.kaggle.com/datasets/sohier/calcofi">data</a>.</p>
+<p>Your task is to find the regression model that best fits. Although there are multiple ways to assess this, for this exercise we will only be looking at the plots from the regression lines to estimate the best fit.</p>
+<p>NOTE: You can just compare the regression models of linear, polynomial degree 5 and polynomial degree 15 in order to write the solution. Feel free to experiment with more polynomial degrees using the edit code section.</p>
+</section>
+<div class="cell code" data-execution_count="11" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}" id="Y3HqeK7ozq6m" data-outputId="0e29ef7e-0bea-4a3e-a850-7af56b64fb5c">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Impoting packages</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> make_pipeline</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> PolynomialFeatures</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the oceanographic dataset from the provided link</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">&quot;https://raw.githubusercontent.com/JakeMWu/single-linear-regression-CalCOFI-oceanographic-data/main/tempsal.csv&quot;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>oceanographic_data <span class="op">=</span> pd.read_csv(url, nrows<span class="op">=</span><span class="dv">300</span>)  <span class="co"># Use only the first 300 rows</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove rows with NaN values in &#39;T_degC&#39; or &#39;Salnty&#39;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>oceanographic_data <span class="op">=</span> oceanographic_data.dropna(subset<span class="op">=</span>[<span class="st">&#39;T_degC&#39;</span>, <span class="st">&#39;Salnty&#39;</span>])</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Use &#39;T_degC&#39; as the feature and &#39;Salnty&#39; as the target variable</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> oceanographic_data[<span class="st">&#39;T_degC&#39;</span>].values.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> oceanographic_data[<span class="st">&#39;Salnty&#39;</span>].values</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Split the data into training and testing sets</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot linear regression using Seaborn</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span>X.flatten(), y<span class="op">=</span>y, color<span class="op">=</span><span class="st">&#39;black&#39;</span>, label<span class="op">=</span><span class="st">&#39;Data&#39;</span>, s <span class="op">=</span> <span class="dv">20</span>)</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Linear Regression&#39;</span>)</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Temperature (T_degC)&#39;</span>)</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Salinity (Salnty)&#39;</span>)</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit linear regression</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>linear_model <span class="op">=</span> LinearRegression()</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>linear_model.fit(X_train, y_train)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>y_linear_pred <span class="op">=</span> linear_model.predict(X)</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluate the linear regression model</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>mse_linear <span class="op">=</span> mean_squared_error(y_test, linear_model.predict(X_test))</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the linear regression model</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span>X.flatten(), y<span class="op">=</span>y_linear_pred, label<span class="op">=</span><span class="ss">f&#39;Linear Regression (MSE: </span><span class="sc">{</span>mse_linear<span class="sc">:.2f}</span><span class="ss">&#39;</span>, color<span class="op">=</span><span class="st">&#39;red&#39;</span>, linewidth <span class="op">=</span> <span class="dv">3</span>)</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit polynomial regression using pipeline</span></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="co">################################################################</span></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a><span class="co">#Edit the following code</span></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>degrees <span class="op">=</span> [<span class="dv">14</span>] <span class="co">#You can add or delete different numbers to see how different degrees of polynomial regression fits the data</span></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a><span class="co">###############################################################</span></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> degree <span class="kw">in</span> degrees:</span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> make_pipeline(PolynomialFeatures(degree), LinearRegression())</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>    model.fit(X_train, y_train)</span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Predict on the original data</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>    y_poly_pred <span class="op">=</span> model.predict(X)</span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Evaluate the polynomial regression model</span></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>    mse_poly <span class="op">=</span> mean_squared_error(y_test, model.predict(X_test))</span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the polynomial regression model</span></span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>    sns.lineplot(x<span class="op">=</span>X.flatten(), y<span class="op">=</span>y_poly_pred, label<span class="op">=</span><span class="ss">f&#39;Poly Regression (Degree </span><span class="sc">{</span>degree<span class="sc">}</span><span class="ss">, MSE: </span><span class="sc">{</span>mse_poly<span class="sc">:.2f}</span><span class="ss">&#39;</span>, linewidth <span class="op">=</span> <span class="dv">3</span>)</span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="5cfb0abdb16ccb010da67db7103fba08e82853bf.png" /></p>
+</div>
+</div>
+<section id="answer-the-following-question-with-a-brief-reasoning" class="cell markdown" id="CBdX6iQPkJP3">
+<h3><strong>Answer the following question with a brief reasoning.</strong></h3>
+<p>Since there can be multiple regresion models that can be categorised as best fit, mention one regression model linear or a polynomial of Nth degree that you estimate as the best fit.</p>
+</section>
+<div class="cell markdown" id="Pr8d7NlMdvJh">
+<p><strong>Briefly explain your deduction and reasoning of the best regression model</strong></p>
+<p>At a polynomial degree of 14, the polynomial regression model appears to provide an excellent fit for the data within the salinity range of 34 to 34.25. During this range, the model effectively captures the data's patterns. Moreover, it's noteworthy that the performance of the polynomial regression in this range is comparable to that of a linear regression model.</p>
+<p>However, it's important to note that the situation is different when examining salinity values below 33.5. In this lower salinity range, the polynomial regression model may not precisely fit all data points. However, this is because the data points below 34 salinity scatters a lot more than the data points above 34 salinity which makes this difficule to match most of the data points.</p>
+</div>
+</body>
+</html>
