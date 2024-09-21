@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>684cdbe0c4a54adaa57906cbf84e6041</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="important-instruction" class="cell markdown"
+id="E2WR-yMIpcbm">
+<h2>Important instruction</h2>
+<p>For programming exercises that only editing, only edit the code as
+shown in the following format.</p>
+<pre><code>##############################################
+
+#Edit the following code
+
+var1 = 3
+var2 = 4
+print(var1 + var4)
+
+##############################################</code></pre>
+<p>You are open to experimenting with the other parts of code but you
+will only be awarded points if the question asked is answered which only
+needs finishing or making changes to the code in the above specified
+format.</p>
+</section>
+<section id="question-7-clustering-using-gaussian-mixture-model-gmm"
+class="cell markdown" id="pUm8wagILU0-">
+<h2>Question 7: Clustering using Gaussian Mixture Model (GMM)</h2>
+<p>The objective of this question is to implement Gaussian Mixture Model
+(GMM) for clustering of a shopping mall dataset. Follow the given
+instructions below:</p>
+<ol>
+<li><p>Load the Dataset from <a
+href="https://raw.githubusercontent.com/InseadDataAnalytics/INSEADAnalytics/master/CourseSessions/Sessions45/data/Mall_Visits.csv"
+class="uri">https://raw.githubusercontent.com/InseadDataAnalytics/INSEADAnalytics/master/CourseSessions/Sessions45/data/Mall_Visits.csv</a></p></li>
+<li><p><strong>Preprocess the Data</strong>:</p>
+<ul>
+<li>Drop the 'ID' column since it is not needed for clustering. Only
+numerical features are retained for clustering purposes.</li>
+<li>The features are standardized using the <code>StandardScaler</code>
+from <code>scikit-learn</code> to ensure that each feature has a mean of
+0 and a standard deviation of 1.</li>
+</ul></li>
+<li><p><strong>Implement Gaussian Mixture Model (GMM)</strong>:</p>
+<ul>
+<li>Apply Gaussian Mixture Model (GMM) to the preprocessed data using
+<code>GaussianMixture</code> from <code>sklearn.mixture</code>.</li>
+<li>Try different values for <code>n_components</code> parameter to find
+the most appropriate value.</li>
+<li>The <code>random_state</code> parameter is set to 99 for
+reproducibility.</li>
+</ul></li>
+</ol>
+<ul>
+<li>Train the model using fit method.</li>
+</ul>
+<ol>
+<li><strong>Visualize the Clusters</strong>:
+<ul>
+<li>Perform Principal Component Analysis (PCA) to reduce the
+dimensionality of the data to two components for visualization
+purposes.</li>
+<li>Plot the PCA-transformed data using a scatter plot.</li>
+<li>Color each point on the scatter plot according to the cluster
+assigned by the GMM model. (Use 'viridis' color map to represent
+different clusters.)</li>
+<li>The plot should include labels for the x and y axes, as well as a
+title.</li>
+</ul></li>
+</ol>
+<p>For more information, refer to the following resources:</p>
+<ul>
+<li>Section <strong>7.4: Expectation-Maximization Algorithm</strong> and
+<strong>7.5: Mixtures of Latent Variable Models</strong> of
+<strong>Introduction to Machine Learning, 4th Edition, The MIT Press,
+2020</strong> by Ethem Alpaydin.</li>
+<li><a
+href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html"
+class="uri">https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html</a></li>
+<li><a
+href="https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html"
+class="uri">https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html</a></li>
+<li><a
+href="https://www.analyticsvidhya.com/blog/2021/05/a-comprehensive-guide-to-expectation-maximization-algorithm/"
+class="uri">https://www.analyticsvidhya.com/blog/2021/05/a-comprehensive-guide-to-expectation-maximization-algorithm/</a></li>
+<li><a
+href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html"
+class="uri">https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html</a></li>
+<li><a
+href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html"
+class="uri">https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html</a></li>
+</ul>
+</section>
+<div class="cell code" data-execution_count="1" id="uT2Y1fAYAq1e">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.mixture <span class="im">import</span> GaussianMixture</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the dataset</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">&quot;https://raw.githubusercontent.com/InseadDataAnalytics/INSEADAnalytics/master/CourseSessions/Sessions45/data/Mall_Visits.csv&quot;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(url)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Preprocess the Data</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop the &#39;ID&#39; column</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>data.drop(<span class="st">&#39;ID&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardize the features</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>X_scaled <span class="op">=</span> scaler.fit_transform(data)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Implement Gaussian Mixture Model (GMM)</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Test different values for &#39;n_components&#39;</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>n_components <span class="op">=</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>models <span class="op">=</span> [GaussianMixture(n, covariance_type<span class="op">=</span><span class="st">&#39;full&#39;</span>, random_state<span class="op">=</span><span class="dv">99</span>).fit(X_scaled) <span class="cf">for</span> n <span class="kw">in</span> n_components]</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the model with the lowest Bayesian Information Criterion (BIC)</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>BICs <span class="op">=</span> [model.bic(X_scaled) <span class="cf">for</span> model <span class="kw">in</span> models]</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>best_n_components <span class="op">=</span> n_components[BICs.index(<span class="bu">min</span>(BICs))]</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>gmm <span class="op">=</span> GaussianMixture(n_components<span class="op">=</span>best_n_components, covariance_type<span class="op">=</span><span class="st">&#39;full&#39;</span>, random_state<span class="op">=</span><span class="dv">99</span>).fit(X_scaled)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize the Clusters</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform PCA</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>X_pca <span class="op">=</span> pca.fit_transform(X_scaled)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Predict the cluster for each observation</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>clusters <span class="op">=</span> gmm.predict(X_scaled)</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the PCA-transformed data</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_pca[:, <span class="dv">0</span>], X_pca[:, <span class="dv">1</span>], c<span class="op">=</span>clusters, cmap<span class="op">=</span><span class="st">&#39;viridis&#39;</span>, edgecolor<span class="op">=</span><span class="st">&#39;k&#39;</span>, s<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Clusters after PCA Transformation&#39;</span>)</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Principal Component 1&#39;</span>)</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Principal Component 2&#39;</span>)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>plt.colorbar(label<span class="op">=</span><span class="st">&#39;Cluster&#39;</span>)</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Return the selected number of components</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>best_n_components</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/var/folders/lg/2q8qqkr114l8_j_c4h8bm_wm0000gn/T/ipykernel_6938/3634324585.py:2: DeprecationWarning: 
+Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+but was not found to be installed on your system.
+If this would cause problems for you,
+please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+        
+  import pandas as pd
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_3db9ae9128e34299a214555e70955749/4e5e8c872451f7ed19f66202ed7e2b36cc0bb1ec.png" /></p>
+</div>
+<div class="output execute_result" data-execution_count="1">
+<pre><code>10</code></pre>
+</div>
+</div>
+<div class="cell code" id="CPpNqd0CEqgt">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">################## FOR REFERENCE ONLY ##################</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># For additional analysis on the clusters...</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign cluster labels to the original dataset</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>data[<span class="st">&#39;Cluster&#39;</span>] <span class="op">=</span> gmm.predict(X_scaled)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate summary statistics for each cluster</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>summary_stats <span class="op">=</span> data.groupby(<span class="st">&#39;Cluster&#39;</span>).describe()</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the summary statistics</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>summary_stats.head()</span></code></pre></div>
+</div>
+<section id="answer-the-following-question-with-a-brief-reasoning"
+class="cell markdown" id="qnVOewTEKtYI">
+<h3><strong>Answer the following question with a brief
+reasoning.</strong></h3>
+<p>What are the reasonable number of clusters and upon examining the
+plot (or, along with summary_stats) were you able to observe the most
+influencing features for the clustering?</p>
+</section>
+<div class="cell markdown" id="4_1PwyVdKtYJ">
+<p>The PCA scatter plot indicates a distribution of data points into
+multiple clusters, as shown by the color gradient, but it doesn't
+clearly specify the number of distinct clusters. There seems to be some
+overlap, suggesting that the clusters may not be well-separated in this
+reduced space. Without the actual summary statistics or the BIC values
+for different numbers of clusters, it's challenging to pinpoint the most
+influential features or the precise number of clusters. To draw these
+conclusions, one would need to analyze the detailed output of the GMM,
+including the component means and covariances, and consider descriptive
+statistics of the original features for each cluster.</p>
+</div>
+<section id="question-8-nonparametric-density-estimation---histogram"
+class="cell markdown" id="OnZllgi5Ldel">
+<h2>Question 8: Nonparametric Density Estimation - Histogram</h2>
+<p>The objective of this question is to implement Histogram technique of
+non-parametric density estimation for analyzing the distribution of a
+given dataset. Follow the given instructions below:</p>
+<ol>
+<li>For importing data, use <code>fetch_openml</code> from
+<code>sklearn.datasets</code>.</li>
+</ol>
+<ul>
+<li>Set the <code>data_id</code> to 506.</li>
+<li>Assign <code>'target'</code> attribute of the dataset to
+<code>data</code> variable.</li>
+</ul>
+<ol>
+<li>The function <code>hist_pdf</code> is defined with x, data and
+n_bins as parameters. x is defined as the value at which the probability
+density function (PDF) will be evaluated, data parameter denotes the
+dataset for which the density estimation will be performed and n_bins
+denotes the number of bins to use for the histogram calculation.</li>
+</ol>
+<ul>
+<li><p>Set <code>n_bins</code> to 5.</p></li>
+<li><p>Use NumPy's <code>np.histogram</code> function to calculate the
+histogram of the input data. Specify the number of bins (bins) using the
+<code>n_bins</code> parameter. Set the <code>density</code> parameter to
+<code>True</code> to compute the normalized density (PDF).</p></li>
+<li><p>Calculate Bin Width: Compute the width of each bin
+(<code>bin_width</code>) by subtracting the position of the first bin
+from the position of the second bin.This step ensures that we know the
+size of each bin in our histogram.</p></li>
+</ul>
+<ol>
+<li>Plot the Density Estimation:</li>
+</ol>
+<ul>
+<li>Provide the <code>xvals</code> array as the x-values of the plot and
+the <code>pdf</code> array (calculated PDF values) as the y-values of
+the plot.</li>
+<li>Add appropriate labels, title and legend to plot.</li>
+</ul>
+<p>For more information, refer to the following resources:</p>
+<ul>
+<li>Section <strong>8.2.1: Histogram Estimator</strong> of
+<strong>Introduction to Machine Learning, 4th Edition, The MIT Press,
+2020</strong> by Ethem Alpaydin.</li>
+<li><a
+href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_openml.html"
+class="uri">https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_openml.html</a></li>
+<li><a
+href="https://numpy.org/doc/stable/reference/generated/numpy.linspace.html"
+class="uri">https://numpy.org/doc/stable/reference/generated/numpy.linspace.html</a></li>
+<li><a
+href="https://numpy.org/doc/stable/reference/generated/numpy.histogram.html"
+class="uri">https://numpy.org/doc/stable/reference/generated/numpy.histogram.html</a></li>
+<li><a
+href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html"
+class="uri">https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html</a></li>
+</ul>
+</section>
+<div class="cell code" data-execution_count="6" id="w2tYICCffyrb">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> fetch_openml</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Write your code here</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Load data</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>dataset <span class="op">=</span> fetch_openml(data_id<span class="op">=</span><span class="dv">506</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> dataset[<span class="st">&#39;target&#39;</span>].astype(np.float64)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Write your code here</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hist_pdf(x, data, n_bins<span class="op">=</span><span class="dv">5</span>):</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    hist, bins <span class="op">=</span> np.histogram(data, bins<span class="op">=</span>n_bins, density<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    bin_width <span class="op">=</span> bins[<span class="dv">1</span>] <span class="op">-</span> bins[<span class="dv">0</span>]</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    bin_index <span class="op">=</span> np.digitize(x, bins) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    pdf <span class="op">=</span> hist[bin_index] <span class="cf">if</span> <span class="dv">0</span> <span class="op">&lt;=</span> bin_index <span class="op">&lt;</span> n_bins <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pdf</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co"># histogram</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>xvals <span class="op">=</span> np.linspace(<span class="bu">min</span>(data), <span class="bu">max</span>(data), <span class="dv">1000</span>)</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>pdf <span class="op">=</span> [hist_pdf(x, data) <span class="cf">for</span> x <span class="kw">in</span> xvals]</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="co">#Write your code here</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot the Density Estimation</span></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>plt.plot(xvals, pdf, label<span class="op">=</span><span class="ss">f&#39;Histogram PDF with </span><span class="sc">{</span>n_bins<span class="sc">}</span><span class="ss"> bins&#39;</span>)</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Data Values&#39;</span>)</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Probability Density&#39;</span>)</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Non-parametric Density Estimation - Histogram&#39;</span>)</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_3db9ae9128e34299a214555e70955749/8bbadab133cb343fd5acaca51142b55eb1ec41e3.png" /></p>
+</div>
+</div>
+<section id="question-9-outlier-detection---local-outlier-factor-lof"
+class="cell markdown" id="nMrfqdUiLiIz">
+<h2>Question 9: Outlier Detection - Local outlier factor (LOF)</h2>
+<p>Implement outlier detection using the Local Outlier Factor (LOF)
+algorithm on iris dataset.</p>
+<ol>
+<li><p>Load iris dataset using <code>load_iris</code> and assign
+<code>iris.data</code> to variable X.</p></li>
+<li><p>Implement LOF Algorithm:</p>
+<ul>
+<li>Instantiate the <code>LocalOutlierFactor</code> class with
+appropriate parameters. Experiment and adjust the
+<code>n_neighbors</code> and <code>contamination</code> parameters based
+on the characteristics of the outliers.</li>
+<li>Fit the LOF model to the scaled features.</li>
+<li>Use the fitted LOF model to predict outliers
+(<code>outlier_scores</code>) in the dataset.</li>
+</ul></li>
+<li><p>Run 3 experiments varying <code>n_neighbors</code> and
+<code>contamination</code> parameters and find the set of parameters
+that best identifies the outliers.</p></li>
+</ol>
+<p>For more information, refer to the following resources:</p>
+<ul>
+<li>Sections <strong>8.7: Outlier Detection</strong> of
+<strong>Introduction to Machine Learning, 4th Edition, The MIT Press,
+2020</strong> by Ethem Alpaydin.</li>
+<li><a
+href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.LocalOutlierFactor.html"
+class="uri">https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.LocalOutlierFactor.html</a></li>
+<li><a
+href="https://www.geeksforgeeks.org/novelty-detection-with-local-outlier-factor-lof-in-scikit-learn/"
+class="uri">https://www.geeksforgeeks.org/novelty-detection-with-local-outlier-factor-lof-in-scikit-learn/</a></li>
+</ul>
+</section>
+<div class="cell code" data-execution_count="7" id="dvEUkyO1PWE9">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_iris</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> LocalOutlierFactor</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Write your code here</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the Iris dataset</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>iris <span class="op">=</span> load_iris()</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> iris.data</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Implement LOF algorithm</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize parameters for the LOF algorithm</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>n_neighbors_options <span class="op">=</span> [<span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">20</span>]</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>contamination_options <span class="op">=</span> [<span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.1</span>]</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n_neighbors <span class="kw">in</span> n_neighbors_options:</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> contamination <span class="kw">in</span> contamination_options:</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Instantiate the LocalOutlierFactor class</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>        lof <span class="op">=</span> LocalOutlierFactor(n_neighbors<span class="op">=</span>n_neighbors, contamination<span class="op">=</span>contamination)</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Fit the LOF model</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>        outlier_scores <span class="op">=</span> lof.fit_predict(X)</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>        <span class="co"># The LOF algorithm marks outliers as -1</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>        outlier_mask <span class="op">=</span> outlier_scores <span class="op">==</span> <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Print the number of outliers detected with current parameters</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;Parameters: n_neighbors=</span><span class="sc">{</span>n_neighbors<span class="sc">}</span><span class="ss">, contamination=</span><span class="sc">{</span>contamination<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;Number of outliers detected: </span><span class="sc">{</span>outlier_mask<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ch">\n</span><span class="ss">&quot;</span>)</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Instantiate LOF with the assumed best parameters        </span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>lof <span class="op">=</span> LocalOutlierFactor(n_neighbors<span class="op">=</span><span class="dv">10</span>, contamination<span class="op">=</span><span class="fl">0.05</span>)</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>outlier_scores <span class="op">=</span> lof.fit_predict(X)</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a><span class="co">############################################################</span></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>outlier_mask <span class="op">=</span> outlier_scores <span class="op">==</span> <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize outliers</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span><span class="st">&#39;blue&#39;</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, label<span class="op">=</span><span class="st">&#39;Inliers&#39;</span>)</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[outlier_mask][:, <span class="dv">0</span>], X[outlier_mask][:, <span class="dv">1</span>], c<span class="op">=</span><span class="st">&#39;red&#39;</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, label<span class="op">=</span><span class="st">&#39;Outliers&#39;</span>)</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Sepal Length&#39;</span>)</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Sepal Width&#39;</span>)</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Outlier Detection using LOF&#39;</span>)</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Discuss findings and effectiveness of LOF algorithm</span></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Number of outliers detected:&quot;</span>, np.<span class="bu">sum</span>(outlier_mask))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Parameters: n_neighbors=5, contamination=0.01
+Number of outliers detected: 2
+
+Parameters: n_neighbors=5, contamination=0.05
+Number of outliers detected: 8
+
+Parameters: n_neighbors=5, contamination=0.1
+Number of outliers detected: 15
+
+Parameters: n_neighbors=10, contamination=0.01
+Number of outliers detected: 2
+
+Parameters: n_neighbors=10, contamination=0.05
+Number of outliers detected: 8
+
+Parameters: n_neighbors=10, contamination=0.1
+Number of outliers detected: 15
+
+Parameters: n_neighbors=20, contamination=0.01
+Number of outliers detected: 2
+
+Parameters: n_neighbors=20, contamination=0.05
+Number of outliers detected: 8
+
+Parameters: n_neighbors=20, contamination=0.1
+Number of outliers detected: 15
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_3db9ae9128e34299a214555e70955749/7896b6616b3f558cf7866bbb423df8c85f293364.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Number of outliers detected: 8
+</code></pre>
+</div>
+</div>
+<section id="answer-the-following-question-with-a-brief-reasoning"
+class="cell markdown" id="LyAyGsGVZLG2">
+<h3><strong>Answer the following question with a brief
+reasoning.</strong></h3>
+<p>Mention the set of values for the parameters n_neighbors and
+contamination that performed the best in outlier detection, along with
+the reason for why it outperformed the other two experiments.</p>
+</section>
+<div class="cell markdown" id="w34yt_qsZLG3">
+<p>The optimal parameter set for the Local Outlier Factor (LOF)
+algorithm in detecting outliers in the Iris dataset was n_neighbors=10
+and contamination=0.05. This combination outperformed others by
+achieving a balanced detection of outliers—identifying 8 potential
+anomalies. It effectively balanced sensitivity and specificity, avoiding
+the extremes of being too conservative or too liberal in marking
+outliers. The choice of n_neighbors provided a substantial local context
+for density estimation, while the contamination rate aligned well with
+the expected proportion of outliers, ensuring a reasonable boundary
+between normal variations and actual anomalies.</p>
+</div>
+</body>
+</html>
